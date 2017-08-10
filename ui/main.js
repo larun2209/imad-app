@@ -11,7 +11,7 @@
   //  var interval= setInterval(moveRight,50);
     //img.style.marginLeft ='100px';
 //};
-var counter=0;
+
 var button = document.getElementById('counter');
 button.onClick =function(){
     counter=counter+1;
