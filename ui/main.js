@@ -29,5 +29,5 @@ button.onclick =function(){
                             };
    
    request.open('GET','http://larun22091974.imad.hasura-app.io/counter',true);
-   request.send(NULL);
+   request.send(null;
 };
