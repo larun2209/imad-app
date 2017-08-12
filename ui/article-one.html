@@ -59,14 +59,13 @@
         <script>
         var commentsInput= document.getElementById('comments');
         var comments = commentsInput.value;
-        var list=comments.toString();
         var enter= document.getElementById('enter_btn');
         enter.onclick= function(){
         //var list=['xx','xxyy','','',''];
         //for(var i=0; i< list.length;i++)
         //commentlist+='<li>'+list[i]+'</li>';
         var ul= document.getElementById('commentlist');
-        ul.innerHTML=list;
+        ul.innerHTML=list.toString();;
         };
         </script>
 
