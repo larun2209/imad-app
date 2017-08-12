@@ -42,7 +42,7 @@ submit.onclick= function(){
         list+='<li>'+names[i]+'</li>';
     }
    var ul= document.getElementById('namelist');
-    ul.innerHTML=list
+    ul.innerHTML=list;
 };
 
 var commentsInput= document.getElementById('comments');
@@ -54,5 +54,5 @@ enter.onclick= function(){
         list+='<li>'+comments[i]+'</li>';
     }
    var ul= document.getElementById('commentlist');
-    ul.innerHTML=list
+    ul.innerHTML=list;
 };
