@@ -63,7 +63,7 @@
         enter.onclick= function(){
         var commentlist=['xx','xxyy','','',''];
         for(var i=0; i< commentlist.length;i++)
-        commentlist+='<li>'+comments+'</li>';
+        commentlist+='<li>'+commentlist[i]+'</li>';
         var ul= document.getElementById('commentlist');
         ul.innerHTML=commentlist;
         };
