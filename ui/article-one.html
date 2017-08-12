@@ -57,5 +57,15 @@
                 </ul>
         </div>
         
+        var commentsInput= document.getElementById('comments');
+        var comments = commentsInput.value;
+        var enter= document.getElementById('enter_btn');
+        enter.onclick= function(){
+        var commentlist=[];
+        commentlist+='<li>'+comments+'</li>';
+        var ul= document.getElementById('commentlist');
+        ul.innerHTML=commentlist;
+};
+        
     </body>
 </html>
