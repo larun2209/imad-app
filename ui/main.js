@@ -44,3 +44,15 @@ submit.onclick= function(){
    var ul= document.getElementById('namelist');
     ul.innerHTML=list
 };
+
+var commentsInput= document.getElementById('comments');
+var comments = commentsInput.value;
+var enter= document.getElementById('enter_btn');
+enter.onclick= function(){
+    var commentlist=[];
+    for(var i=0; i<comments.length;i++){
+        list+='<li>'+comments[i]+'</li>';
+    }
+   var ul= document.getElementById('commentlist');
+    ul.innerHTML=list
+};
