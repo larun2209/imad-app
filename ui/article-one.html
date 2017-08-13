@@ -53,21 +53,20 @@
                 
                 <input type=text id='comments' placeholder='comments'>
                 <input type =submit id= 'enter_btn' value='enter'>
-                <ul id ='commentlist'> </ul>
+                <p id ='commentlist'> </p>
         </div>
         
         <script>
         
         var enter= document.getElementById('enter_btn');
-        var i=0;
-        var list =['xx','yy','zz'];
+        
         enter.onclick= function(){
             var Input= document.getElementById('comments');
             var comments = Input.value;
-            var modifiedcomment = '<li> '+ comments + '</li>';
+            modified = comments+'\r'
             list = document.getElementById('commentlist');
-            list[i].innerHTML= modifiedcomment;
-            i++;
+            list.innerHTML= modified;
+            
         };
         </script>
 
