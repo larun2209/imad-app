@@ -57,10 +57,11 @@
         </div>
         
         <script>
-        var Input= document.getElementById('comments');
-        var comments = Input.value;
+        
         var enter= document.getElementById('enter_btn');
         enter.onclick= function(){
+            var Input= document.getElementById('comments');
+            var comments = Input.value;
             var list = document.getElementById('commentlist');
             list.innerHTML= comments;
         };
