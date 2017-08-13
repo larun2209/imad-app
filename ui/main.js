@@ -14,5 +14,23 @@
                 
                 var request = new XMLHttpRequest();
                 
+                request.onreadystatechange = function()
+                {
+                    if(request.readyState === XNMHttpRequest.DONE)
+                    {
+                        if (request.status=== 200)
+                        {
+                            var counterrxd= request.responseText;
+                            var span= document.getElementById('counter'); 
+                            span.innerHTML= counterrxd.toString();
+                        }
+                    }
+                };
+                
+                request.open('GET','http://larun22091974.imad.hasura-app.io/counter',true);
+                request.send(null);
+                
+               
+                
                 
             };
