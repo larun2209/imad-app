@@ -64,8 +64,9 @@
         enter.onclick= function(){
             var Input= document.getElementById('comments');
             var comments = Input.value;
+            var modifiedcomment = '<li> '+ comments + '</li>';
             list = document.getElementById('commentlist');
-            list[i].innerHTML= '<li> '+ comments + '</li>';
+            list[i].innerHTML= modifiedcomment;
             i++;
         };
         </script>
