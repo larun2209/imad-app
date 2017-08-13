@@ -62,9 +62,7 @@
         var comments = commentsInput.value;
         var enter= document.getElementById('enter_btn');
         enter.onclick= function(){
-        var list=['xx','xxyy','','',''];
-        for(var i=0; i< list.length;i++)
-            commentlist+='<li>'+list[i]+'</li>';
+            commentlist+='<li>'+comments+'</li>';
             var ul= document.getElementById('commentlist');
             ul.innerHTML= commentlist;
         };
