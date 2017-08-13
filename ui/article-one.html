@@ -53,8 +53,9 @@
                 
                 <input type=text id='comments' placeholder='comments'>
                 <input type =submit id= 'enter_btn' value='enter'>
-                <p id ='commentlist'> </p>
-                <p id='break'> </p>
+                <ul id ='commentlist'> </ul>
+             
+                
         </div>
         
         <script>
@@ -64,10 +65,9 @@
         enter.onclick= function(){
             var Input= document.getElementById('comments');
             var comments = Input.value;
-            list = document.getElementById('commentlist');
-            list.innerHTML= comments;
-            list1 = document.getElementById('break');
-            list1.innerHTML='/r'
+            var list = document.getElementById('commentlist');
+            list.innerHTML= '<li>'+ 'comments'+ '</li>';
+            
             
         };
         </script>
