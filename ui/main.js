@@ -1,7 +1,4 @@
 
-
-
-        var i=0;
         var list='';
         var enter= document.getElementById('enter_btn');
         enter.onclick= function(){
@@ -10,7 +7,7 @@
                 list+='<li>'+ comments + '</li>';
                 var ul = document.getElementById('commentlist');
                 ul.innerHTML= list;
-                i++;
+                
                 
                 var request = new XMLHttpRequest();
                 request.onreadystatechange = function()
