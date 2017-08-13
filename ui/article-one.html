@@ -61,7 +61,8 @@
         var comments = Input.value;
         var enter= document.getElementById('enter_btn');
         enter.onclick= function(){
-            commentlist.innerHTML= comments.toString();
+            var list = document.getElementById('commentlist');
+            list.innerHTML= comments.toString();
         };
         </script>
 
