@@ -53,18 +53,15 @@
                 
                 <input type=text id='comments' placeholder='comments'>
                 <input type =submit id= 'enter_btn' value='enter'>
-                <ul id ='commentlist'>
-                </ul>
+                <p> id ='commentlist'</p>
         </div>
         
         <script>
-        var commentsInput= document.getElementById('comments');
-        var comments = commentsInput.value;
+        var Input= document.getElementById('comments');
+        var comments = Input.value;
         var enter= document.getElementById('enter_btn');
         enter.onclick= function(){
-            commentlist+='<li>'+comments+'</li>';
-            var ul= document.getElementById('commentlist');
-            ul.innerHTML= commentlist;
+            commentlist.innerHTML= comments.toString();
         };
         </script>
 
