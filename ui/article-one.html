@@ -61,12 +61,16 @@
         <script>
         
         var enter= document.getElementById('enter_btn');
-        
+        var list=[];
         enter.onclick= function(){
-            var Input= document.getElementById('comments');
-            var comments = Input.value;
-            var list = document.getElementById('commentlist');
-            list.innerHTML= '<li>'+ 'comments'+ '</li>';
+            for(var i=0; i<6;i++){
+                var Input= document.getElementById('comments');
+                var comments = Input.value;
+                list[i]='<li>'+ comments + '</li>';
+            };
+            
+            var ul = document.getElementById('commentlist');
+            ul.innerHTML= list
             
             
         };
