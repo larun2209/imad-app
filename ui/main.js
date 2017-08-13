@@ -11,4 +11,8 @@
                 var ul = document.getElementById('commentlist');
                 ul.innerHTML= list;
                 i++;
+                
+                var request = new XMLHttpRequest();
+                
+                
             };
