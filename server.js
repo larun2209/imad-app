@@ -71,6 +71,9 @@ app.post('/login', function (req, res) {
             }
             else
             {
+                var dbstring = result.rows[0].password;
+                dbstring.split('$')[2];
+                var hashedpassword=hash(password,salt);
                 res.send('user successfuly created'+username);  
             }
         } 
