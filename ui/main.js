@@ -2,9 +2,9 @@
         submitbtn.onclick= function(){
                 console.log('hello');
                 var usrname = document.getElementById("username").value;
-             //   var pwd = document.getElementById("password").value;
+                var pwd = document.getElementById("password").value;
                 console.log(usrname);
-             //   console.log(pwd);
+                console.log(pwd);
                 
                 var request = new XMLHttpRequest();
                 
@@ -28,9 +28,9 @@
                     }
                 };
                 
-               // request.open('POST','http://larun22091974.imad.hasura-app.io/login',true);
-               // request.setRequestHeader("Content-Type","application/json");
-               // request.send(JSON.stringify({username:username,password:password}));
+                request.open('POST','http://larun22091974.imad.hasura-app.io/login',true);
+                request.setRequestHeader("Content-Type","application/json");
+                request.send(JSON.stringify({username:username,password:password}));
               
              
             };    
