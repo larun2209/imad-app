@@ -17,7 +17,6 @@
                         }
                         else if (request.status=== 403) 
                         {
-                            
                             alert("user name/password is incorrect");
                         }
                          else if (request.status=== 500) 
