@@ -2,9 +2,9 @@
         submitbtn.onclick= function(){
                 console.log('hello');
                 var usrname = document.getElementById("username").value;
-                var pwd = document.getElementById("password").value;
+             //   var pwd = document.getElementById("password").value;
                 console.log(usrname);
-                console.log(pwd);
+             //   console.log(pwd);
                 
                 var request = new XMLHttpRequest();
                 
