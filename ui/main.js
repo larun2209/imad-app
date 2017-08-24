@@ -28,8 +28,9 @@
                     }
                 };
                 
-                request.open('GET','http://larun22091974.imad.hasura-app.io/counter',true);
-                request.send(null);
+                request.open('POST','http://larun22091974.imad.hasura-app.io/login',true);
+                request.setRequestHeader("Content-Type","application/jason");
+                request.send(JSON.stringify({username:username,password:password}));
               
              
             };    
