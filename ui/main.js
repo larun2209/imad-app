@@ -1,6 +1,6 @@
         var submitbtn= document.getElementById('submit_btnpwd');
         submitbtn.onclick= function(){
-                var usrname= document.getElementById('username').value;
+                var usrname = document.getElementById('username').value;
                 var pwd = document.getElementById('password').value;
                 console.log(usrname);
                 console.log(pwd);
