@@ -1,4 +1,4 @@
-        var submitbtn= document.getElementById("submit");
+        var submitbtn= document.getElementById("submit_btn");
         submitbtn.onclick= function(){
                 console.log('hello');
                 var usrname = document.getElementById("username").value;
